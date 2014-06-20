@@ -109,7 +109,8 @@ Basic query execution:</p>
 <p>
 Execute a query with some specified bindings:</p>
 <pre>
-    $ stardog query -b "s=&lt;http://example.org/test&gt;" p=ex:name o=\"John Doe\"' myDb "select * {?s ?p ?o}"</pre>
+    $ stardog query -b "s=&lt;http://example.org/test&gt;" p=ex:name o=\"John Doe\" -- myDb "select * {?s ?p ?o}"</pre>
+    It may be useful to add the ‘--‘, a separator for the end of the keyword arguments i.e. ‘-b' and the command line arguments <database>  <query>
 <p>
 Execute a query with reasoning:</p>
 <pre>
